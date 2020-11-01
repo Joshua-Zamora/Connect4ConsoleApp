@@ -41,7 +41,7 @@ class Controller
         } while ($this->endGame($info) == FALSE);
     }
 
-    function endGame($info) {
+    private function endGame($info) {
         if ($info['ack_move']['isWin'] == true) {
             $this->printBoard();
 
@@ -66,7 +66,7 @@ class Controller
         return false;
     }
 
-    function printBoard() {
+    private function printBoard() {
         echo "\n";
         for ($i = 0; $i < 6; $i++) {
             for ($j = 0; $j < 7; $j++) {
