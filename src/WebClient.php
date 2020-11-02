@@ -14,7 +14,7 @@ class WebClient
         return $responseParser->parseInfo();
     }
 
-    function getWebPage($url) {
+    function getWebPage($url) { // Obtains information from web page
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
         curl_setopt($ch, CURLOPT_HEADER, false);
@@ -23,6 +23,9 @@ class WebClient
         curl_setopt($ch, CURLOPT_REFERER, $url);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
         $result = curl_exec($ch);
+
+        if (!$result) exit("\n\n CANNOT CONNECT TO SERVER!");
+
         curl_close($ch);
         return $result;
     }

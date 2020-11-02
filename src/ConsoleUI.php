@@ -17,12 +17,12 @@ class ConsoleUI
         );
     }
 
-    function promptServer() {
-        echo "\nEnter the server URL [default: http://www.cs.utep.edu/cheon/cs3360/project/c4] ";
+    function promptServer() { // Asks user for server url
+        echo "\nEnter the server URL [default: https://cssrvlab01.utep.edu/classes/cs3360/jazamora6] ";
         return readline();
     }
 
-    function promptStrategy($strategies) {
+    function promptStrategy($strategies) { // Asks user for chosen strategy
         echo "\nSelect the server strategy: 1. $strategies[0] 2. $strategies[1] [default: 1] ";
         $line = readline();
 

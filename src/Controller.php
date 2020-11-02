@@ -9,7 +9,7 @@ class Controller
 
     function __construct() {}
 
-    function requestGame() {
+    function requestGame() { // Gathers info for a new game
         $this->console = new ConsoleUI();
 
         $this->url = $this->console->promptServer();
@@ -27,12 +27,22 @@ class Controller
         $this->playGame();
     }
 
-    private function playGame() {
+    private function playGame() { // Prompts the user for moves
         do {
             $this->printBoard();
 
+            input:
             echo "\nEnter a move: ";
             $move = readline();
+
+            if (!is_numeric($move)){
+                echo "\nInvalid move: " . $move;
+                goto input;
+            }
+            elseif ((int) $move  < 0 | (int) $move > 6) {
+                echo "\nInvalid move: " . $move;
+                goto input;
+            }
 
             $info = $this->client->getInfo($this->url . "/play/?pid=" . $this->pid . ".txt&move=" . $move);
 
@@ -41,7 +51,7 @@ class Controller
         } while ($this->endGame($info) == FALSE);
     }
 
-    private function endGame($info) {
+    private function endGame($info) { // Checks if game is complete
         if ($info['ack_move']['isWin'] == true) {
             $this->printBoard();
 
@@ -66,7 +76,7 @@ class Controller
         return false;
     }
 
-    private function printBoard() {
+    private function printBoard() { // Prints the board
         echo "\n";
         for ($i = 0; $i < 6; $i++) {
             for ($j = 0; $j < 7; $j++) {

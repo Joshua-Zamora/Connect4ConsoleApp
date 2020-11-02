@@ -9,7 +9,7 @@ class ResponseParser
         $this->info = $info;
     }
 
-    function parseInfo() {
+    function parseInfo() { // Parses given json string
         return json_decode($this->info, true);
     }
 }
