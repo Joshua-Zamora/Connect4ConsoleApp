@@ -18,12 +18,12 @@ class ConsoleUI
     }
 
     function promptServer() { // Asks user for server url
-        echo "\nEnter the server URL [default: https://cssrvlab01.utep.edu/classes/cs3360/jazamora6] ";
+        echo "\nEnter the server URL [default: https://cssrvlab01.utep.edu/classes/cs3360/jazamora6]: ";
         return readline();
     }
 
     function promptStrategy($strategies) { // Asks user for chosen strategy
-        echo "\nSelect the server strategy: 1. $strategies[0] 2. $strategies[1] [default: 1] ";
+        echo "\nSelect the server strategy: 1. $strategies[0] 2. $strategies[1] [default: 1]: ";
         $line = readline();
 
         switch ((int) $line) {

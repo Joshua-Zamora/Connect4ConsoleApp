@@ -5,9 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ConsoleUI.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConsoleUI.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ResponseParser.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ResponseParser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebClient.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +66,7 @@
       <workItem from="1604171757788" duration="1353000" />
       <workItem from="1604173137818" duration="18864000" />
       <workItem from="1604200864531" duration="131000" />
-      <workItem from="1604301881086" duration="1468000" />
+      <workItem from="1604301881086" duration="1970000" />
     </task>
     <task id="LOCAL-00001" summary="Added Encapsulation">
       <created>1604200960662</created>
@@ -78,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604200960662</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added error checking and comments">
+      <created>1604303391396</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604303391396</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,7 +90,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added Encapsulation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Encapsulation" />
+    <MESSAGE value="Added error checking and comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added error checking and comments" />
   </component>
   <component name="WindowStateProjectService">
     <state x="861" y="356" key="#CLI_Interpreters" timestamp="1604169571065">
@@ -97,10 +102,11 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1039" y="581" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2560.1400/-1920.576.1920.1040@0.0.2560.1400" timestamp="1604171175367" />
-    <state x="-1337" y="664" key="CommitChangelistDialog2" timestamp="1604200960209">
-      <screen x="-1920" y="576" width="1920" height="1040" />
+    <state x="777" y="118" key="CommitChangelistDialog2" timestamp="1604303390921">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="-1337" y="664" key="CommitChangelistDialog2/0.0.2560.1400/-1920.576.1920.1040@-1920.576.1920.1040" timestamp="1604200960209" />
+    <state x="777" y="118" key="CommitChangelistDialog2/0.0.2560.1400/-1920.576.1920.1040@0.0.2560.1400" timestamp="1604303390921" />
     <state x="1105" y="621" key="Github.CreateGistDialog" timestamp="1604199881295">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -113,22 +119,22 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1055" y="406" key="Github.UntrackedFilesDialog/0.0.2560.1400/-1920.576.1920.1040@0.0.2560.1400" timestamp="1604200539514" />
-    <state width="2517" height="400" key="GridCell.Tab.0.bottom" timestamp="1604303115082">
+    <state width="2517" height="400" key="GridCell.Tab.0.bottom" timestamp="1604303813947">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="400" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.576.1920.1040@0.0.2560.1400" timestamp="1604303115082" />
-    <state width="2517" height="400" key="GridCell.Tab.0.center" timestamp="1604303115082">
+    <state width="2517" height="400" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.576.1920.1040@0.0.2560.1400" timestamp="1604303813947" />
+    <state width="2517" height="400" key="GridCell.Tab.0.center" timestamp="1604303813946">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="400" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.576.1920.1040@0.0.2560.1400" timestamp="1604303115082" />
-    <state width="2517" height="400" key="GridCell.Tab.0.left" timestamp="1604303115082">
+    <state width="2517" height="400" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.576.1920.1040@0.0.2560.1400" timestamp="1604303813946" />
+    <state width="2517" height="400" key="GridCell.Tab.0.left" timestamp="1604303813946">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="400" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.576.1920.1040@0.0.2560.1400" timestamp="1604303115082" />
-    <state width="2517" height="400" key="GridCell.Tab.0.right" timestamp="1604303115082">
+    <state width="2517" height="400" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.576.1920.1040@0.0.2560.1400" timestamp="1604303813946" />
+    <state width="2517" height="400" key="GridCell.Tab.0.right" timestamp="1604303813946">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="400" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.576.1920.1040@0.0.2560.1400" timestamp="1604303115082" />
+    <state width="2517" height="400" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.576.1920.1040@0.0.2560.1400" timestamp="1604303813946" />
     <state width="2517" height="492" key="GridCell.Tab.1.bottom" timestamp="1604200732177">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -157,9 +163,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="782" y="346" key="SettingsEditor/0.0.2560.1400/-1920.576.1920.1040@0.0.2560.1400" timestamp="1604169573050" />
-    <state x="-1368" y="829" key="Vcs.Push.Dialog.v2" timestamp="1604200963665">
-      <screen x="-1920" y="576" width="1920" height="1040" />
+    <state x="736" y="341" key="Vcs.Push.Dialog.v2" timestamp="1604303395059">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="-1368" y="829" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1920.576.1920.1040@-1920.576.1920.1040" timestamp="1604200963665" />
+    <state x="736" y="341" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1920.576.1920.1040@0.0.2560.1400" timestamp="1604303395059" />
   </component>
 </project>

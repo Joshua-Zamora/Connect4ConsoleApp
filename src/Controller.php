@@ -29,9 +29,11 @@ class Controller
 
     private function playGame() { // Prompts the user for moves
         do {
+            echo "\nPlayer=o CPU=x";
             $this->printBoard();
 
             input:
+
             echo "\nEnter a move: ";
             $move = readline();
 
@@ -55,21 +57,21 @@ class Controller
         if ($info['ack_move']['isWin'] == true) {
             $this->printBoard();
 
-            echo "\nYOU WON!";
-            echo "\nWinning row: ". json_encode($info['ack_move']['row']);
+            echo "\nYOU WON!\n";
+            echo "\nWinning row: ". json_encode($info['ack_move']['row']) . "\n";
             return true;
         }
         else if($info['move']['isWin'] == true) {
             $this->printBoard();
 
-            echo "\nYOU LOST!";
-            echo "\nWinning row: ". json_encode($info['move']['row']);
+            echo "\nYOU LOST!\n";
+            echo "\nWinning row: ". json_encode($info['move']['row']) . "\n";
             return true;
         }
         else if ($info['ack_move']['isDraw'] == true) {
             $this->printBoard();
 
-            echo "\nDRAWN!";
+            echo "\nDRAWN!\n";
             return true;
         }
 
@@ -81,7 +83,8 @@ class Controller
         for ($i = 0; $i < 6; $i++) {
             for ($j = 0; $j < 7; $j++) {
                 if ($this->console->board[$i][$j] == 0) echo " " . ".";
-                else echo " " . $this->console->board[$i][$j];
+                else if($this->console->board[$i][$j] == 1) echo " " . "o";
+                else if($this->console->board[$i][$j] == 2) echo " " . "x";
             }
             echo "\n";
         }
