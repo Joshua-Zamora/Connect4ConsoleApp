@@ -1,6 +1,5 @@
 <?php
 
-define('WRITE', dirname(dirname(__FILE__))."/writable/");
 
 class ConsoleUI
 {
